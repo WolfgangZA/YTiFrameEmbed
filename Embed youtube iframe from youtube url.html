@@ -1,0 +1,11 @@
+<html>
+<p id="Embedd"></p>
+<button id="CalculateButton" onclick="GetVideoEmbedd()">Calculate</button>
+<script>
+    function GetVideoEmbedd(){
+const url = "https://www.youtube.com/watch?v=viOkh9al0xM";
+const v = new URL(url).searchParams.get('v');
+document.getElementById("Embedd").innerHTML=('beforebegin',`<iframe width="480" height="270" src="https://www.youtube.com/embed/${v}?feature=oembed" allowfullscreen></iframe>`);
+    }
+</script>
+</html>
